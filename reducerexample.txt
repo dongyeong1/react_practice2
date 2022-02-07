@@ -1,0 +1,33 @@
+const initialState={
+    name:'zeroCho',
+    age:27,
+    password:'babo'
+}
+
+//action
+//state를 바꾸고싶을때 항상 action을 만들어서 store에서 action을이용해 dispatch를 한다 그러면 그바꾼 데이터가 reducer로 전달된다  
+//그러면 기존state 말고 다음state가 만들어진다
+const changeNickname={
+    type:'CHANGE_NICKNAME',
+    data:'dong'
+}
+//action creator 동적으로 데이터받는다 
+const changeNicknames=(data)=>{
+    return{
+        type:'CHANGE_NICKNAME',
+        data,
+    }
+}
+
+
+//reducer는 이전상태와 액션을 이용해서 다음상태를 만든다
+const rootReducer=(state=initialState,action)=>{
+    switch(action.type){
+        case 'CHANGE_NICKNAME':
+            return{
+                ...state,
+                name:action.data,  
+            }
+    }
+}
+export default rootReducer

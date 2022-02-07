@@ -1,0 +1,1 @@
+{"ast":null,"code":"const rootReducer = () => {};\n\nexport default rootReducer;","map":{"version":3,"sources":["/Users/dong/nodebird/prepare/front/reducers/index.js"],"names":["rootReducer"],"mappings":"AAAA,MAAMA,WAAW,GAAE,MAAI,CAEtB,CAFD;;AAGA,eAAeA,WAAf","sourcesContent":["const rootReducer=(()=>{\n\n})\nexport default rootReducer"]},"metadata":{},"sourceType":"module"}
